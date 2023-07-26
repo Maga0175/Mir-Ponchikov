@@ -15,62 +15,62 @@
         }
         header {
             display: flex;
-            align-items: center;
+            flex-direction: column; /* Изменим на column, чтобы элементы расположились вертикально */
+            align-items: center; /* Добавим выравнивание по центру по поперечной оси */
             background-color: #f9f9f9;
             padding: 10px; 
         }
         h1 {
             font-size: 26px;
-            margin-left: 10px; 
+            color: red;
         }
         .img {
-            margin-right: 10px; 
+            margin-top: 10px; /* Изменяем margin-top для картинки */
         }
-        a{
-
+        a {
             font-size: 15px;
-            
         }
-        a:hover{
+        a:hover {
             transition: background-color;
             transition-duration: 1s;
             border-radius: 5px;
             border: 2px solid #ccc;               
             background-color: yellow;
-
         }
         .card {
-    width: 250px;
-    margin: 10px;
-    border: 2px solid #ccc;
-    border-radius: 5px;
-    padding: 10px;
-    flex-direction: row-revers;
-}
+            width: 250px;
+            margin: 10px;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            display: flex;
+            flex-direction: column; /* Изменим на column, чтобы элементы расположились вертикально */
+            align-items: center; /* Добавим выравнивание по центру по поперечной оси */
+        }
 
-.card img {
-    width: 100%;
-    height: 80%;
-    border-radius: 5px;
-}
+        .card img {
+            width: 100%;
+            height: 80%;
+            border-radius: 5px;
+        }
 
-.card h2 {
-    font-size: 18px;
-    margin: 10px 0;
-}
+        .card h2 {
+            font-size: 18px;
+            margin: 10px 0;
+        }
 
-.card p {
-    font-size: 14px;
-}
+        .card p {
+            font-size: 14px;
+        }
     </style>
 </head>
 <body>
     <header>
+        <h1>Магазин пончиков</h1>
+        <a href="" style="margin-left: 20px">Ассортимент</a>
+        <img src='https://o.remove.bg/downloads/98ca82c0-76fd-44fc-bcb8-7c4a8528d7c1/png-clipart-computer-icons-skyscraper-encapsulated-postscript-skyscraper-building-logo-removebg-preview.png' width="70" height="60" style="margin-left: 60px;">
+        <h2 style="margin-top: 50px;">Калининград</h2>
         <img src='/uploads/2023/02/donut.png' width="70" height="60" class="img">
-        <h1 style = "color:red">Магазин пончиков</h1>
-        <a href = "" style="margin-left: 20px">Ассортимент</a>
-        <img src='https://o.remove.bg/downloads/98ca82c0-76fd-44fc-bcb8-7c4a8528d7c1/png-clipart-computer-icons-skyscraper-encapsulated-postscript-skyscraper-building-logo-removebg-preview.png' width="70" height="60" style = "margin-left: 60px;">
-        <h2 style = "margin-top: 50px;">Калининград</h2>
     </header>
     <main>
         <div class="card">
